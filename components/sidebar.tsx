@@ -47,8 +47,8 @@ function FolderGroup(props: { folder: Folder }) {
 			}
 			return f;
 		});
-		setStorage(newStorage);
 		setShowCreateInput(false);
+		setStorage(newStorage);
 		setInput("");
 	};
 
