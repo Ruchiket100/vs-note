@@ -24,6 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <link href="https://cdn.jsdelivr.net/gh/Ruchiket100/fontawesome-pro@master/fontawesome-pro-6.5.1-web/css/all.css"  rel="stylesheet" type="text/css"  />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
