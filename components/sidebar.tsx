@@ -60,7 +60,7 @@ function FolderGroup(props: { folder: Folder }) {
 			>
 				<i
 					className={`far fa-chevron-right ${
-						showFiles ? "rotate-90" : ""
+						showFiles ? "rotate-90" : "rotate-0"
 					} transition-all`}
 				/>
 				<span>{folder.name}</span>
