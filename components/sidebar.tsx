@@ -56,7 +56,7 @@ function FolderGroup(props: { folder: Folder }) {
 		<div className="flex flex-col select-none text-sm h-screen  ">
 			<div
 				onClick={() => setShowFiles(!showFiles)}
-				className="flex items-center gap-3 px-3 py-1 cursor-pointer hover:bg-primaryActive group	"
+				className="flex items-center gap-3 px-3 py-1 cursor-pointer hover:bg-primaryActive group"
 			>
 				<i
 					className={`far fa-chevron-right ${
@@ -64,7 +64,7 @@ function FolderGroup(props: { folder: Folder }) {
 					} transition-all`}
 				/>
 				<span>{folder.name}</span>
-				<div className="absolute right-4 hidden group-hover:flex ">
+				<div className="absolute right-4 hidden group-hover:flex group-hover:bg-accentActive/80">
 					<button
 						onClick={(e) => {
 							e.stopPropagation();
