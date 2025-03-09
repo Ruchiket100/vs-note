@@ -1,6 +1,20 @@
 @import 'tailwindcss';
 
+@custom-variant dark (@media (prefers-color-scheme: dark));
 
+@theme {
+
+  --color-primary: var(--note-primary);
+  --color-primaryFont: var(--note-primaryFont);
+  --color-secondary: var(--note-secondary);
+  --color-secondaryFont: var(--note-secondaryFont);
+  --color-accent: var(--note-accent);
+  --color-accentActive: var(--note-accentActive);
+  --color-opaque: var(--note-opaque);
+  --color-shadow: var(--note-shadow);
+    --color-border: var(--note-border);
+  --color-opaqueActive: var(--note-opaqueActive);
+}
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
