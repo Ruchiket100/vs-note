@@ -33,9 +33,26 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-primaryFont`}
 			>
-				<Providers>{children}</Providers>
+				<Providers>
+					<div className="flex flex-col h-screen justify-between">
+						<div className=" mx-4 my-2 h-full flex gap-4 relative">
+							<div className="w-[80vw] h-full flex-1">
+								{children}
+							</div>
+							<div className="w-[15vw] h-full rounded-lg bg-red-500">
+								fdskl
+							</div>
+							<div className="w-[4vw] h-full rounded-lg bg-red-500">
+								fdskl
+							</div>
+						</div>
+						<footer className="bg-accent flex mx-4 my-2 h-[3vh] mb-4 z-50 rounded-full">
+							fsdf
+						</footer>
+					</div>
+				</Providers>
 			</body>
 		</html>
 	);
