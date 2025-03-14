@@ -52,11 +52,11 @@ export default function Home() {
 	const debouncedUpdate = debounce(updateLineNumbers, 100);
 
 	return (
-		<div className="flex">
-			<Sidebar />
+		<div className="flex h-full w-full bg-primary">
+			{/* <Sidebar /> */}
 
 			<div
-				className="flex flex-col text-end gap-[2px] w-[60px] p-4 h-screen text-amber-900/30 font-medium bg-amber-50"
+				className="flex bg-secondary h-full rounded-lg shadow-sm flex-col text-end gap-[2px] w-[60px] p-4  text-secondaryFont/50 font-medium border-r border-border"
 				ref={lineNumbersRef}
 			>
 				{lines.map((line) => (
@@ -66,7 +66,7 @@ export default function Home() {
 			<ContentEditable
 				onKeyUp={handleCursorMove}
 				onClick={handleCursorMove}
-				className="flex-1 p-4 outline-none max-h-screen h-full text-lg/6.5"
+				className="flex-1 p-4 outline-none  bg-secondary shadow-sm h-full rounded-lg text-lg/6.5"
 				innerRef={editorRef as any}
 				html={content}
 				onChange={(e) => {
@@ -74,21 +74,20 @@ export default function Home() {
 					// debouncedUpdate();
 				}}
 			/>
-			<button onClick={() => console.log(storage)}>Hello World</button>
-			<aside className=" bg-amber-100 h-screen flex flex-col z-20">
+			{/* <aside className=" bg-accent h-screen flex flex-col z-20">
 				<span
 					onClick={() => setShowSidebar(!showSidebar)}
-					className="p-4 flex items-center hover:bg-amber-200/30 text-2xl text-amber-950 cursor-pointer"
+					className="p-4 flex items-center hover:bg-accentActive text-2xl text-primaryFont cursor-pointer"
 				>
 					<i className="fa-light fa-files" />
 				</span>
-				<span className="p-4 flex items-center hover:bg-amber-200/30 text-2xl text-slate-700">
+				<span className="p-4 flex items-center hover:bg-accentActive text-2xl text-primaryFont">
 					<i className="fa-light fa-gear" />
 				</span>
 			</aside>
-			<div className="fixed bottom-0 bg-yellow-200 py-1 w-full px-4 text-sm">
+			<div className="fixed bottom-0 bg-accent py-1 w-full px-4 text-sm">
 				characters
-			</div>
+			</div> */}
 		</div>
 	);
 }
