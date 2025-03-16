@@ -53,10 +53,10 @@ function FolderGroup(props: { folder: Folder }) {
 	};
 
 	return (
-		<div className="flex flex-col select-none text-sm ">
+		<div className="flex flex-col select-none text-sm h-screen  ">
 			<div
 				onClick={() => setShowFiles(!showFiles)}
-				className="flex items-center gap-3 px-3 py-1 cursor-pointer hover:bg-gray-500/10 group	"
+				className="flex items-center gap-3 px-3 py-1 cursor-pointer hover:bg-primaryActive group	"
 			>
 				<i
 					className={`far fa-chevron-right ${
@@ -83,15 +83,15 @@ function FolderGroup(props: { folder: Folder }) {
 					<Link
 						key={i}
 						href={`/file/${file.name}`}
-						className="flex items-center gap-2 px-3 py-1 pl-8 hover:bg-gray-500/10"
+						className="flex items-center gap-2 px-3 py-1 pl-8 hover:bg-primaryActive"
 					>
-						<i className="far fa-file text-slate-700" />
+						<i className="far fa-file text-accent" />
 						<span>{file.name}</span>
 					</Link>
 				))}
 				{!!showCreateInput && (
 					<div className="flex gap-2 items-center px-3 py-1 pl-8">
-						<i className="far fa-file text-slate-700" />
+						<i className="far fa-file text-primaryFont" />
 						<input
 							onChange={(e) => setInput(e.target.value)}
 							type="text"
@@ -118,7 +118,7 @@ function FolderGroup(props: { folder: Folder }) {
 								<div key={i}>
 									<button
 										onClick={actionBtn.onClick}
-										className={`transition-all text-gray-800 hover:text-black ${actionBtn.className}`}
+										className={`transition-all text-secondaryFont hover:text-primaryFont ${actionBtn.className}`}
 									>
 										<i
 											className={`far fa-${actionBtn.icon}`}
