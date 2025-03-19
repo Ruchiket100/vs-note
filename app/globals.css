@@ -1,7 +1,5 @@
 @import 'tailwindcss';
-
 @custom-variant dark (@media (prefers-color-scheme: dark));
-
 @theme {
 
   --color-primary: var(--note-primary);
@@ -12,7 +10,7 @@
   --color-accentActive: var(--note-accentActive);
   --color-opaque: var(--note-opaque);
   --color-shadow: var(--note-shadow);
-    --color-border: var(--note-border);
+  --color-border: var(--note-border);
   --color-opaqueActive: var(--note-opaqueActive);
 }
 
