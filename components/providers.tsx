@@ -47,5 +47,6 @@ export default function Providers(props: { children: React.ReactNode }) {
 			},
 		]);
 	}, []);
+
 	return <Provider store={store}>{children}</Provider>;
 }
