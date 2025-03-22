@@ -33,7 +33,7 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-primaryFont`}
+				className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-primaryFont select-text`}
 			>
 				<Providers>
 					<div className="flex flex-col h-screen justify-between">

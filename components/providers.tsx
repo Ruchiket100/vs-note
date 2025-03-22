@@ -31,7 +31,7 @@ export default function Providers(props: { children: React.ReactNode }) {
 				name: "*",
 				files: [
 					{
-						name: "Untitled",
+						name: "Title Here",
 						content: "content",
 					},
 				],
