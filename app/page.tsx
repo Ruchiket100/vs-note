@@ -43,7 +43,6 @@ export default function Home() {
 		);
 		setLines(Array.from({ length: totalLines }, (_, i) => i + 1));
 
-		// Sync scroll position
 		if (lineNumbersRef.current) {
 			lineNumbersRef.current.scrollTop = editorRef.current.scrollTop;
 		}
